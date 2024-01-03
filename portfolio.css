@@ -23,6 +23,15 @@ nav ul {
     justify-content: center;
 
 }
+.right {
+    display: flex;
+    list-style: none;
+}
+.right > #clr{
+list-style: none;
+/* background-color: blueviolet; */
+
+}
 
 nav ul li {
     list-style-type: none;
@@ -169,7 +178,7 @@ width: 223px;
     padding: 12px 0;
 }
 
-.btn{
+#btn1,#btn2,#btn3{
     padding: 12px;
     background-color: rgb(93, 78, 225);
     border: 2px solid white;
@@ -180,12 +189,12 @@ width: 223px;
     position: relative;
 }
 
-.btn:hover{
+#btn1:hover,#btn2:hover,#btn3:hover{
     scale: 0.9;
     
 }
 
-.btn1{
+#btn1{
     background-color: rgb(93, 78, 225);
     border: 2px solid white;
     border-radius: 5px;
@@ -195,6 +204,19 @@ width: 223px;
     right: 35px;
     position: relative; 
     animation: border;
+    
+}
+#clr{
+    padding: 12px;
+    border-radius: 90px;
+    /* margin-left: 90px; */
+    position: relative;
+left: 200px;
+background-color: rgb(7, 1, 36);
+color: white;
+border: 3px solid white;
+    
+
 }
 
 @keyframes border {

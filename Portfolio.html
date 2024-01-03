@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="head">
         <nav>
             <div class="left">Sahil's Portfolio</div>
             <div class="right">
@@ -24,6 +24,7 @@
                     <li class=""><a href="http://">Projects</a></li>
                     <li class=""><a href="http://">Contact me</a></li>
                 </ul>
+                <li ><button onclick="violet()" type="button" id="clr">Click me</button></li>
             </div>
         </nav>
     </header>
@@ -34,9 +35,9 @@
                 <div>and I am a Passionate</div>
                 <div>WebDeveloper</div><span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
-                    <button class="btn">Visit Projects</button>
+                    <button  id="btn1">Visit Github</button>
+                    <button id="btn2">Download Resume</button>
+                    <button id="btn3">Visit Projects</button>
                 </div>
             </div>
             <div class="rightSection"><img src="portfolio.png" alt=""></div>
@@ -127,5 +128,6 @@
         typeSpeed: 50,
     });
 </script>
+<script src="portfolio.js"></script>
 
 </html>
