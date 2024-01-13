@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sahil-Developer Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="head">
+        <nav>
+            <div class="left">Sahil's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li class=""><a href="http://">Home</a></li>
+                    <li class=""><a href="http://">About</a></li>
+                    <li class=""><a href="http://">Services</a></li>
+                    <li class=""><a href="http://">Projects</a></li>
+                    <li class=""><a href="http://">Contact me</a></li>
+                </ul>
+                <li ><button onclick="violet()" type="button" id="clr">Click me</button></li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+         
+            <div class="leftSection">Hi , my name is <span class="purpleText">Sahil Jadhav</span>
+                <div>and I am a Passionate</div>
+                <div>WebDeveloper</div><span id="element"></span>
+                <div class="buttons">
+                    <button  id="btn1">Visit Github</button>
+                    <button id="btn2">Download Resume</button>
+                    <button id="btn3">Visit Projects</button>
+                </div>
+            </div>
+            <div class="rightSection"><img src="portfolio.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experince</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="dev.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci deserunt totam .
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="dev.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Node.js Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci deserunt totam .
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="dev.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci deserunt totam .
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="dev.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci deserunt totam .
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Sahil's Developers Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights" >  COpyrights &#169; Sahil'sPortfolio.com | All rights reserved</div>
+    </footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['HTML', 'CSS', 'JAVASCRIPT', 'Tailwind'],
+        typeSpeed: 50,
+    });
+</script>
+<script src="portfolio.js"></script>
+
+</html>

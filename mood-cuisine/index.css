@@ -2,6 +2,7 @@
     margin: 0;
     display: flexbox;
     padding: 0;
+    
 }
 
 body {
@@ -15,11 +16,11 @@ body {
     background-color: 	rgb(210, 4, 45,.55);
     /* border: 2px solid red; */
     align-items: center;
-    position: relative;
-    top: 30px;
+    margin-top: 20px;
     margin-left:20px ;
     margin-right:20px ;
     /* width: 500px; */
+    box-shadow: 3px 5px  rgb(71, 66, 66);
 }
 
 .rightSection{
@@ -37,7 +38,10 @@ cursor: pointer;
 .leftSection h1{
   font-size: 50px;
 }
-
+.sections{
+    display: flex;
+    justify-content: space-between;
+}
 .rightSection ul {
     display: flex;
     list-style: none;
@@ -66,36 +70,129 @@ cursor: pointer;
 }
 
 main{
-    border: 2px solid red;
-    height: 700px;
-    margin-top: 50px;
+    /* border: 2px solid red; */
+    height: 755px;
+    margin-top: 18px;
+   
 }
+main hr{
+    height: 3px;
+    background-color: red;
+    width: 1980px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.size1 ul,.size2 ul{
+    list-style: none;
+}
+.size1 ul li button,.size2 ul li button {
+    width: 250px;
+    height: 200px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 59px;
+    /* padding-right: 50px; */
+    font-size: 25px;
+    /* margin-bottom: 100px; */
+    /* background-color: rgb(7, 7, 36); */
+    color: white;
+    border-radius: 3px;
+}
+main .size1 ul li button:hover,.size2 ul li button:hover{
+    /* border: 5px dashed lightgreen; */
+    box-shadow: 5px 5px 0px grey;
+}
+#mood-btn,#feedback-btn{
+    margin-top: 100px;
 
+}
+.img{
+    width: 230px;
+}
+.img1{
+width: 250px;
+height: 197px;
+}
+.img3{
+    width: 240px;
+    height: 195px;
+}
+.img4{
+    width: 240px;
+    height: 190px;
+}
+.buttons{
+    margin-top: 100px;
+    margin-left: 70px;
+    list-style: none;
+}
+.buttons2 .size2 ul{
+    margin-top: 100px;
+    margin-right: 60px;
+    
+}
+.subs,.subs1{
+    width: 260px;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
-.container{
+/* .container{
     width: 1200px;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     overflow: hidden;
-    /* border: 20px solid #ffffff; */
     border-radius: 8px;
     box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
-}
-.wrapper{
-    /* width: 600px;
-    height: 600px; */
+    display: flex;
+} */
+/* .wrapper{
+  
     width: 1181px;
     height: 611px;
     display: flex;
     animation: slide 16s infinite;
+} */
+.container {
+    width: 80%; /* Change this to a percentage value */
+    max-width: 1332px; /* Add a max-width to prevent it from stretching too wide */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+    display: flex;
+    margin-top: 35px;
 }
+
+.wrapper {
+    width: 100%; /* Adjust to 100% */
+    height: 100%; /* Adjust to 100% */
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust for smaller screens */
+    }
+}
+
 @keyframes slide{
     0%{
         transform: translateX(0);
@@ -129,6 +226,7 @@ img{
 .size ul{
     display: flex;
     justify-content: space-around;
+    margin-top:50px ;
 
 }
 
@@ -142,17 +240,38 @@ img{
    width: 150px;
    border-radius: 5px;
    cursor: pointer;
-    animation: glowing  infinite ;
-    transition: 2s
-   
+   background-color: rgb(3, 3, 28);
+   font-size: 30px;
+   color: white; 
+}
+.size ul li button:hover{
+ border: 7px solid lightgreen;
+ color: lightgreen;
 }
 
-
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+.part{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.rightPart{
+    width: 50%;
+}
+.rightPart ul {
+    display: flex;
+justify-content: end;
+}
+.rightPart ul li{
+    display: flex;
+    margin: 0px 25px 25px;
+    cursor: pointer;
+}
+.rightPart h3{
+    margin-top: 15px;
 }
 
+.leftPart{
+    font-weight: bold;
+    margin-top: 40px;
 
+}
