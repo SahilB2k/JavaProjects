@@ -8,7 +8,7 @@ import java.net.URL;
 
 public class WeatherAPI {
 
-    private static final String API_KEY="";
+    private static final String API_KEY="73f538145b48a3ba74f3557746bb4650";
     private static final String BASE_URL="http://api.openweathermap.org/data/2.5/forecast";
 
 
